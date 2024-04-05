@@ -1,22 +1,17 @@
 import React from 'react'
-// import { useMemo } from "react"
-// import BottomSheet from "@gorhom/bottom-sheet"
+import { useMemo } from "react"
+import BottomSheet from "@gorhom/bottom-sheet"
 import { StyleSheet, View, Text } from 'react-native'
-// import { PricingCard, Icon } from 'react-native-elements'
-// import Ionicons from 'react-native-vector-icons/Ionicons';
-// import Icon from 'react-native-vector-icons/Ionicons'
-import Ionicon from 'react-native-vector-icons/Ionicons'
-import { SafeAreaView } from 'react-native-safe-area-context'
 function TestScreen() {
     const snapPoints = useMemo(() => ["25%", "50%", "70%"], [])
 
   return (
     <View style={styles.container}>
-      {/* <BottomSheet index={1} snapPoints={snapPoints}> */}
+      <BottomSheet index={1} snapPoints={snapPoints}>
         <View style={styles.contentContainer}>
           <Text style={styles.containerHeadline}>Awesome Bottom Sheet 🎉</Text>
         </View>
-      {/* </BottomSheet> */}
+      </BottomSheet>
     </View>
         
     )
